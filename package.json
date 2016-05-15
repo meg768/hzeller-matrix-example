@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/meg768/hzeller-matrix-example#readme",
   "dependencies": {
+    "hzeller-matrix": "^1.0.8",
     "minimist": "^1.2.0",
-    "hzeller-matrix": "^1.0.8"
+    "yow": "^1.0.4"
   }
 }
