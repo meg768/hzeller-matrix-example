@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/meg768/hzeller-matrix-example/issues"
   },
-  "homepage": "https://github.com/meg768/hzeller-matrix-example#readme"
+  "homepage": "https://github.com/meg768/hzeller-matrix-example#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "hzeller-matrix": "^1.0.8"
+  }
 }
