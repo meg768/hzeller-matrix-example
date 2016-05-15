@@ -10,7 +10,19 @@ var App = function() {
 	
 	this.run = function() {
 
-		if (args.rain) {
+		if (args.fill) {
+			var display = matrix.display;
+			
+			for (var x = 0; x < matrix.width; x++)
+				for (var y = 0; y < matrix.height; y++)
+					matrix.display.drawPixel(x, y, 0, 0, 255);
+					
+			matrix.display.update();
+			
+			setTimeout(function(){}, 2000);
+		}
+		
+		else if (args.rain) {
 			var options = {};
 			
 			extend(options, {duration   : args.duration});
