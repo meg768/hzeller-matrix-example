@@ -4,6 +4,7 @@ var extend  = require('yow').extend;
 var sprintf = require('yow').sprintf;
 var fs      = require('fs');
 var Matrix  = require('hzeller-matrix');
+
 var matrix  = new Matrix({width:32, height:32});
 
 var App = function() {
@@ -29,6 +30,16 @@ var App = function() {
 			extend(options, {delay      : args.delay});
 				
 			matrix.runRain(options);
+		}
+		else if (args.image) {
+			var options = {};
+			
+			extend(options, {scroll     : args.scroll});
+			extend(options, {duration   : args.duration});
+			extend(options, {delay      : args.delay});
+			
+			matrix.runImage(args.image, options);
+			
 		}
 		else if (args.animation) {
 			var options = {};
