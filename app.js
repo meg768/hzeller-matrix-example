@@ -44,8 +44,6 @@ var App = function() {
 		else if (args.animation) {
 			var options = {};
 			
-			console.log('sdfsdf', args.duration);
-			
 			extend(options, {iterations : args.iterations});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
@@ -64,8 +62,10 @@ var App = function() {
 			
 			matrix.runText(args.text, options);
 		}
-		else
-			console.log('Nothing to do!');
+		else {
+			matrix.runText('Hello World!');
+			
+		}
 
 	};
 };
