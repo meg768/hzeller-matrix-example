@@ -35,6 +35,7 @@ var App = function() {
 		else if (args.perlin) {
 			var options = {};
 			
+
 			extend(options, {duration   : args.duration});
 			extend(options, {mode       : args.mode});
 			extend(options, {delay      : args.delay});
