@@ -39,6 +39,8 @@ var App = function() {
 			extend(options, {delay      : args.delay});
 			extend(options, {hold       : args.hold});
 			
+			console.log('hold', args.hold);
+			
 			matrix.runImage(args.image, options);
 			
 		}
