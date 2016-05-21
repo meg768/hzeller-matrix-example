@@ -31,6 +31,17 @@ var App = function() {
 				
 			matrix.runRain(options);
 		}
+
+		else if (args.perlin) {
+			var options = {};
+			
+			extend(options, {duration   : args.duration});
+			extend(options, {mode       : args.mode});
+			extend(options, {delay      : args.delay});
+				
+			matrix.runPerlin(options);
+		}
+
 		else if (args.image) {
 			var options = {};
 			
