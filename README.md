@@ -8,6 +8,8 @@ Or try some animations
 
 	sudo node app.js --rain
 	
+	sudo node app.js --perlin
+	
 	sudo node app.js --animation animations/pacman.gif	
 
 

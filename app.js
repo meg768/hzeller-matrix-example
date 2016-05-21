@@ -37,7 +37,6 @@ var App = function() {
 			extend(options, {scroll     : args.scroll});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
-			extend(options, {hold       : args.hold});
 			extend(options, {pause      : args.pause});
 			
 			matrix.runImage(args.image, options);
