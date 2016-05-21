@@ -38,8 +38,7 @@ var App = function() {
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 			extend(options, {hold       : args.hold});
-			
-			console.log('hold', args.hold);
+			extend(options, {pause      : args.pause});
 			
 			matrix.runImage(args.image, options);
 			
