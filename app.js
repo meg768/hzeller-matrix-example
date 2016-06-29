@@ -73,7 +73,8 @@ var App = function() {
 			extend(options, {duration  : args.duration});
 			extend(options, {delay     : args.delay});
 
-			matrix.runText(args.text, options);
+			matrix.runText('😣', options);
+			//matrix.runText('MAGNUS', options);
 		}
 		else {
 			matrix.runText('Hello World!');
