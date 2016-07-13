@@ -11,6 +11,10 @@ var App = function() {
 
 	this.run = function() {
 
+		function callback() {
+			console.log('Completed.');
+		}
+		
 		if (args.fill) {
 			var display = matrix.display;
 
@@ -73,7 +77,7 @@ var App = function() {
 			extend(options, {duration  : args.duration});
 			extend(options, {delay     : args.delay});
 
-			matrix.runText(args.text, options);
+			matrix.runText(args.text, options, callback);
 		}
 		else {
 			matrix.runText('Hello World!');
