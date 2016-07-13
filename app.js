@@ -71,11 +71,12 @@ var App = function() {
 		else if (args.text) {
 			var options = {};
 
-			extend(options, {textColor : args.textColor});
-			extend(options, {fontName  : args.fontName});
-			extend(options, {fontSize  : args.fontSize});
-			extend(options, {duration  : args.duration});
-			extend(options, {delay     : args.delay});
+			extend(options, {textColor  : args.textColor});
+			extend(options, {fontName   : args.fontName});
+			extend(options, {fontSize   : args.fontSize});
+			extend(options, {duration   : args.duration});
+			extend(options, {delay      : args.delay});
+			extend(options, {iterations : args.iterations});
 
 			matrix.runText(args.text, options, callback);
 
