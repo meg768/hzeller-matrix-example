@@ -1,6 +1,6 @@
 {
   "name": "hzeller-matrix-example",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Example using the hzeller-matrix module",
   "main": "app.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/meg768/hzeller-matrix-example#readme",
   "dependencies": {
-    "hzeller-matrix": "^1.0.24",
+    "hzeller-matrix": "^1.0.26",
     "minimist": "^1.2.0",
     "yow": "^1.0.4"
   }
