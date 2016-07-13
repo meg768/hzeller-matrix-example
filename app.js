@@ -12,7 +12,7 @@ var App = function() {
 	this.run = function() {
 
 		function callback() {
-			console.log('Completed.');
+			console.log('Done.');
 		}
 
 		if (args.fill) {
@@ -33,7 +33,7 @@ var App = function() {
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 
-			matrix.runRain(options);
+			matrix.runRain(options, callback);
 		}
 
 		else if (args.perlin) {
@@ -44,7 +44,7 @@ var App = function() {
 			extend(options, {mode       : args.mode});
 			extend(options, {delay      : args.delay});
 
-			matrix.runPerlin(options);
+			matrix.runPerlin(options, callback);
 		}
 
 		else if (args.image) {
@@ -55,7 +55,7 @@ var App = function() {
 			extend(options, {delay      : args.delay});
 			extend(options, {pause      : args.pause});
 
-			matrix.runImage(args.image, options);
+			matrix.runImage(args.image, options, callback);
 
 		}
 		else if (args.animation) {
@@ -65,7 +65,7 @@ var App = function() {
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 
-			matrix.runAnimation(args.animation, options);
+			matrix.runAnimation(args.animation, options, callback);
 
 		}
 		else if (args.text) {
@@ -78,7 +78,6 @@ var App = function() {
 			extend(options, {delay     : args.delay});
 
 			matrix.runText(args.text, options, callback);
-			setTimeout(function(){}, 2000);
 
 		}
 		else {
