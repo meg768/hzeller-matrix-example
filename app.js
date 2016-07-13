@@ -78,7 +78,7 @@ var App = function() {
 			extend(options, {delay     : args.delay});
 
 			matrix.runText(args.text, options, callback);
-			setTimeout(function(){}, 10000);
+			setTimeout(function(){}, 2000);
 
 		}
 		else {
