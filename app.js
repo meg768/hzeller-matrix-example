@@ -1,5 +1,5 @@
 
-var args    = require('minimist')(process.argv.slice(2));
+var args    = require('minimist')(process.argv.slice(2), {string:['iterations']});
 var extend  = require('yow').extend;
 var sprintf = require('yow').sprintf;
 var fs      = require('fs');
@@ -78,6 +78,7 @@ var App = function() {
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 			console.log(args);
+
 			console.log(args.iterations);
 			extend(options, {iterations : parseInt(args.iterations)});
 
