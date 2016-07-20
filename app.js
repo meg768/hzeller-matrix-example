@@ -1,5 +1,5 @@
 
-var args    = require('minimist')(process.argv.slice(2), {string:['iterations']});
+var args    = require('minimist')(process.argv.slice(2));
 var extend  = require('yow').extend;
 var sprintf = require('yow').sprintf;
 var fs      = require('fs');
