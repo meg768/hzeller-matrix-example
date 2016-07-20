@@ -54,6 +54,7 @@ var App = function() {
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 			extend(options, {pause      : args.pause});
+			extend(options, {iterations : args.iterations});
 
 			matrix.runImage(args.image, options, callback);
 
