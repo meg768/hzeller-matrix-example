@@ -5,9 +5,19 @@ var sprintf = require('yow').sprintf;
 var fs      = require('fs');
 var Matrix  = require('hzeller-matrix');
 
-var matrix  = new Matrix({width:32, height:32});
 
 var App = function() {
+
+	var width  = 32;
+	var height = 32;
+
+	if (args.width != undefined)
+		width = parseInt(args.width);
+
+	if (args.height != undefined)
+		height = parseInt(args.height);
+
+	var matrix  = new Matrix({width:width, height:height});
 
 	this.run = function() {
 

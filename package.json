@@ -1,6 +1,6 @@
 {
   "name": "hzeller-matrix-example",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Example using the hzeller-matrix module",
   "main": "app.js",
   "scripts": {
