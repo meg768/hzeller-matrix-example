@@ -40,7 +40,7 @@ var App = function() {
 		else if (args.rain) {
 			var options = {};
 
-			extend(options, {hue : args.hue});
+			extend(options, {hue : parseInt(args.hue)});
 			extend(options, {duration : args.duration});
 
 			if (args.delay) {
