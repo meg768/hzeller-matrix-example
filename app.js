@@ -40,10 +40,8 @@ var App = function() {
 		else if (args.rain) {
 			var options = {};
 
-			extend(options, {duration   : args.duration});
-			
-			if (args.delay)
-				extend(options, {delay : parseInt(args.delay)});
+			extend(options, {duration : args.duration});
+			extend(options, {delay : args.delay});
 
 			matrix.runRain(options, callback);
 		}
