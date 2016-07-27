@@ -87,10 +87,7 @@ var App = function() {
 			extend(options, {fontSize   : args.fontSize});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
-			console.log(args);
-
-			console.log(args.iterations);
-			extend(options, {iterations : parseInt(args.iterations)});
+			extend(options, {iterations : args.iterations});
 
 			matrix.runText(args.text, options, callback);
 
