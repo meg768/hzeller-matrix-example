@@ -41,7 +41,9 @@ var App = function() {
 			var options = {};
 
 			extend(options, {duration   : args.duration});
-			extend(options, {delay      : args.delay});
+			
+			if (args.delay)
+				extend(options, {delay : parseInt(args.delay)});
 
 			matrix.runRain(options, callback);
 		}
