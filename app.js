@@ -40,7 +40,10 @@ var App = function() {
 		else if (args.rain) {
 			var options = {};
 
-			extend(options, {hue : parseInt(args.hue)});
+			if (args.hue) {
+				extend(options, {hue : parseInt(args.hue)});
+
+			}
 			extend(options, {duration : args.duration});
 
 			if (args.delay) {
@@ -50,6 +53,9 @@ var App = function() {
 
 			}
 
+			for (var key in options) {
+				console.log('key:', key, 'value', options[key]);
+			}
 			matrix.runRain(options, callback);
 		}
 
