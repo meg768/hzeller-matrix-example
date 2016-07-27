@@ -43,8 +43,12 @@ var App = function() {
 			extend(options, {hue : args.hue});
 			extend(options, {duration : args.duration});
 
-			if (args.delay)
-				extend(options, {delay : parseFloat(args.delay)});
+			if (args.delay) {
+				var delay = parseFloat(args.delay);
+				console.log('delay', delay);
+				extend(options, {delay : delay});
+
+			}
 
 			matrix.runRain(options, callback);
 		}
