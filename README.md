@@ -4,6 +4,10 @@ Example of using the **heller-matrix** add-on.
 
 	$ sudo node app.js
 
+This assumes a 32x32 RGB display. To change the width and height use **--width** and **--height** options.
+
+	$ sudo node app.js --width 96 --height 96
+
 Or try some animations
 
 	$ sudo node app.js --rain
