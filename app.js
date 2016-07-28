@@ -15,8 +15,8 @@ var App = function() {
 		var sizes = args.size.split('x');
 
 		if (sizes.length == 2) {
-			args.width = sizes[0];
-			args.width = sizes[1];
+			args.width  = sizes[0];
+			args.height = sizes[1];
 		}
 	}
 
