@@ -1,6 +1,7 @@
 # Hzeller Matrix Example
 
-Example of using the **heller-matrix** add-on.
+Example of using the **heller-matrix** add-on for Node.
+You can find it here https://www.npmjs.com/package/hzeller-matrix
 
 	$ sudo node app.js
 
