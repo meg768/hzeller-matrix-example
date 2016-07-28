@@ -28,3 +28,11 @@ The size of the display may be specified by the **width** and **height** options
 
 	$ sudo node app.js --text "Hello World!" --width 96 --height 96
 	$ sudo node app.js --image images/96x96/emojis/435.png --iterations 2 --width 96 --height 96
+
+Why not try a random animation with a 32x32 display?
+
+	$ sudo node app.js --animation animations/32x32
+
+Or with a 96x96 display?
+
+	$ sudo node app.js --animation animations/96x96 --width 96 --height 96
