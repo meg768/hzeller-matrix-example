@@ -19,8 +19,10 @@ Display text
 
 Display image
 
-	$ sudo node app.js --image images/emoji.png --iterations 2
+	$ sudo node app.js --image images/32x32/emojis/435.png --iterations 2
 
 The size of the display may be specified by the **width** and **height** options.
 
 	$ sudo node app.js --text "Hello World!" --width 96 --height 96
+
+	$ sudo node app.js --image images/96x96/emojis/435.png --iterations 2 --width 96 --height 96
