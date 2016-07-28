@@ -7,9 +7,7 @@ Example of using the **heller-matrix** add-on.
 Or try some animations
 
 	$ sudo node app.js --rain
-
 	$ sudo node app.js --perlin
-
 	$ sudo node app.js --animation animations/32x32/pacman.gif
 
 
@@ -24,5 +22,4 @@ Display image
 The size of the display may be specified by the **width** and **height** options.
 
 	$ sudo node app.js --text "Hello World!" --width 96 --height 96
-
 	$ sudo node app.js --image images/96x96/emojis/435.png --iterations 2 --width 96 --height 96
