@@ -5,9 +5,10 @@ You can find it here https://www.npmjs.com/package/hzeller-matrix
 
 	$ sudo node app.js
 
-This assumes a 32x32 RGB display. To change the width and height use **--width** and **--height** options.
+This assumes a 32x32 RGB display. To change the width and height use **--width** and **--height** options (or **size**).
 
 	$ sudo node app.js --width 96 --height 96
+	$ sudo node app.js --size 96x96
 
 Or try some animations
 
