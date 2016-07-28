@@ -88,6 +88,7 @@ var App = function() {
 			extend(options, {iterations : args.iterations});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
+			extend(options, {speed      : args.speed});
 
 			matrix.runAnimation(args.animation, options, callback);
 
