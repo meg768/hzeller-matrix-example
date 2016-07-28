@@ -40,32 +40,27 @@ var App = function() {
 		else if (args.rain) {
 			var options = {};
 
+			extend(options, {duration   : args.duration});
+			extend(options, {delay      : args.delay});
+			extend(options, {speed      : args.speed});
+
 			if (args.hue) {
 				extend(options, {hue : parseInt(args.hue)});
 
 			}
-			extend(options, {duration : args.duration});
 
-			if (args.delay) {
-				var delay = parseFloat(args.delay);
-				console.log('delay', delay);
-				extend(options, {delay : delay});
 
-			}
-
-			for (var key in options) {
-				console.log('key:', key, 'value', options[key]);
-			}
 			matrix.runRain(options, callback);
 		}
 
 		else if (args.perlin) {
 			var options = {};
 
-
 			extend(options, {duration   : args.duration});
-			extend(options, {mode       : args.mode});
 			extend(options, {delay      : args.delay});
+			extend(options, {speed      : args.speed});
+
+			extend(options, {mode       : args.mode});
 
 			matrix.runPerlin(options, callback);
 		}
@@ -73,9 +68,11 @@ var App = function() {
 		else if (args.image) {
 			var options = {};
 
-			extend(options, {scroll     : args.scroll});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
+			extend(options, {speed      : args.speed});
+
+			extend(options, {scroll     : args.scroll});
 			extend(options, {pause      : args.pause});
 			extend(options, {iterations : args.iterations});
 
@@ -85,10 +82,11 @@ var App = function() {
 		else if (args.animation) {
 			var options = {};
 
-			extend(options, {iterations : args.iterations});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 			extend(options, {speed      : args.speed});
+
+			extend(options, {iterations : args.iterations});
 
 			matrix.runAnimation(args.animation, options, callback);
 
@@ -96,12 +94,13 @@ var App = function() {
 		else if (args.text) {
 			var options = {};
 
-			extend(options, {textColor  : args.textColor});
-			extend(options, {fontName   : args.fontName});
-			extend(options, {fontSize   : args.fontSize});
 			extend(options, {duration   : args.duration});
 			extend(options, {delay      : args.delay});
 			extend(options, {speed      : args.speed});
+
+			extend(options, {textColor  : args.textColor});
+			extend(options, {fontName   : args.fontName});
+			extend(options, {fontSize   : args.fontSize});
 			extend(options, {iterations : args.iterations});
 
 			matrix.runText(args.text, options, callback);
