@@ -11,6 +11,15 @@ var App = function() {
 	var width  = 32;
 	var height = 32;
 
+	if (args.size != undefined) {
+		var sizes = args.size.split('x');
+
+		if (sizes.length == 2) {
+			args.width = sizes[0];
+			args.width = sizes[1];
+		}
+	}
+
 	if (args.width != undefined)
 		width = parseInt(args.width);
 
