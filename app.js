@@ -115,6 +115,13 @@ var App = function() {
 			matrix.runText(args.text, options, callback);
 
 		}
+		else if (args.image) {
+			var options = {};
+
+			extend(options, {duration   : args.duration});
+			matrix.runClock(args.image, options, callback);
+
+		}
 		else {
 			matrix.runText('Hello World!');
 
