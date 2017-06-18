@@ -37,3 +37,4 @@ Why not try a random animation with a 32x32 display?
 Or with a 96x96 display?
 
 	$ sudo node app.js --animation animations/96x96 --size 96x96
+	$ sudo node app.js --clock images/96x96/clocks/swiss-blue.png --size 96x96
